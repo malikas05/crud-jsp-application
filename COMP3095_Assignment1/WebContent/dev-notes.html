@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Development Notes</title>
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="resources/css/main.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="main.jsp">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="departments.html">Departments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="employees.html">Employees</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="groups.html">Groups</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reports.html">Reports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="attendance.html">Attendance</a>
+        </li>
+      </ul>
+      <div class="mt-2 mt-md-0">
+        <span id="greeting" style="color:#fff;">Welcome USER!&nbsp;&nbsp;&nbsp;</span>
+        <a href="logout.html" class="btn btn-danger">Log Out</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div id="main-content" class="row align-items-center">
+      <div class="col"></div>
+      <div class="col">
+        <div class="card" style="width: 40rem;">
+          <div class="card-body">
+            <h4 class="card-title">Development Notes</h4>
+            <p>Folloeing items should be adjusted when using this mockup:</p>
+            <ul style="text-align:left;">
+              <li>Any invalid form element should have "is-invalid" class on it if it fails validation (in addition to other
+                classes).</li>
+              <li>When form is submited successfully the form should have a class of "invisible"</li>
+              <li>When form is submitedt successfully the success message should not have the class of "invisible"</li>
+              <li>Need to save username in a cookie "user_greeting" and JavaScript will update "Welcome USER!"message accordingly</li>
+              <li>For deparments, employees and groups pages - capitalized text (i.e. DEPARTMENT) in alert messages should be replaced with actual value</li>
+              <li>For Groups section - departmentsand employees should be created dynamically based on DB info.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <span class="text-muted">Maxim Bondarenko, Malik Iavari.</span>
+    </div>
+  </footer>
+  <script src="resources/js/main.js"></script>
+</body>
+
+</html>
